@@ -1,4 +1,6 @@
 # Mobility_SlowTraffic.R
+#https://data.stadt-zuerich.ch/dataset/ted_taz_verkehrszaehlungen_werte_fussgaenger_velo
+#https://data.stadt-zuerich.ch/dataset/geo_standorte_der_automatischen_fuss__und_velozaehlungen
 
 # Import libraries
 require(tidyquant)
@@ -50,7 +52,7 @@ fussdaily<-with(zhlv, tapply(FUSS_OUT+FUSS_IN, list(datum, FK_STANDORT), sum, na
 #Fussverkehrszählstellen an denen 2020 überhaupt etwas gemessen wird
 #zst<-apply(fussdaily,2, sum, na.rm=T)>0
 #edit(names(zst)[zst==T]) 
-zst<-c("2", "20", "39", "394", "1357", "1358", 
+zst<-c("2", "20", "39", "394", "1357", "1358", #? warum sind folgende Werte nicht dabei?: 32, 52, 53, 65, 2994
        "1681", "2640", "2641", "2642", "2961", "2984", "2985", 
        "3279")
 fussdaily<-fussdaily[,zst]
