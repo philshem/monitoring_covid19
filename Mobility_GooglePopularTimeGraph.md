@@ -8,6 +8,10 @@ the data in the buckets is refreshed every 30 minutes or so, so you can just kee
 
 Thank you https://twitter.com/philshem 
 
+# Note
+
+This file does not follow the data structure specification. 
+
 # Methodology
 
 ## Google
