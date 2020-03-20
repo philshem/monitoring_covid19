@@ -32,3 +32,7 @@ https://www.linkedin.com/pulse/how-accurate-googles-popular-time-function-m%C3%A
 https://www.quora.com/How-does-the-Google-Maps-Popular-Times-feature-work <br>
 https://medium.com/@bossley.samuel/part-1-how-to-mimic-google-maps-popular-times-to-track-live-and-averaged-visit-data-using-amazon-2fc3cb589358
 
+# Visualization 
+https://observablehq.com/@mmznrstat/people-density
+
+
