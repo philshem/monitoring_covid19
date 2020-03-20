@@ -8,6 +8,9 @@ the data in the buckets is refreshed every 30 minutes or so, so you can just kee
 
 Thank you https://twitter.com/philshem 
 
+In order to get the names of the place (description) join the following csv the above mentioned datasets via the "url" 
+https://www.google.com/maps/place/Der+Gr%C3%BCne+Libanon/@47.3809042,8.5325368,17z/data=!3m1!4b1!4m5!3m4!1s0x47900a0e662015b7:0x54fec14b60b7f528!8m2!3d47.3809006!4d8.5347255?tqx=out:csv&sheet=Sheet1
+
 # Note
 
 This file does not follow the data structure specification. 
