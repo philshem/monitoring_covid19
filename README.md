@@ -66,6 +66,6 @@ I recommend to structure the script as follows: <br>
 - Format data according to data structure specification <br>
 - export result <br>
 
-# Some More Information about the project (in german)
+# Some More Information about the rationale of the project (in german)
 
-See https://kantonzh.slack.com/files/U0100GHAA76/F010DREQXSL/kurzbeschrieb_covid-monitoring.pdf?origin_team=TAXFYF39S&origin_channel=GV4S2M9MH
+See http://www.peter-moser.ch/publikationen/Kurzbeschrieb%20Covid-19_Monitoring_zh.pdf
