@@ -1,4 +1,5 @@
 #  Mobility_PrivateTransport.R
+#https://data.stadt-zuerich.ch/dataset/sid_dav_verkehrszaehlung_miv_od2031
 
 # Import libraries
 require(tidyquant)
@@ -25,7 +26,7 @@ mivdaily<-with(zhmiv, tapply(AnzFahrzeuge, list(datum, ZSID), sum, na.rm=T))
 #Velozählstellen an denen 2020 überhaupt etwas gemessen wird
 # Das undifferenzierte Total der Fahrzeuge an allen Zählstellen 
 #in beide Richtungen ist vielleicht als Indikator für die Gesamtverkehrsintensität, 
-#Im folgenden könnte man eine Auswahl treffen  
+#Im folgenden könnte man eine Auswahl treffen  #? Wie hast du diese Auswahl getroffen?  
 mivdaily[,c("Z001", "Z002", "Z003", "Z004", "Z005", "Z006", "Z007", "Z008", 
   "Z009", "Z010", "Z011", "Z013", "Z014", "Z015", "Z016", "Z017", 
   "Z018", "Z019", "Z020", "Z021", "Z022", "Z025", "Z026", "Z027", 
