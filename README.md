@@ -1,1 +1,57 @@
-# monitoring_covid19
+#monitoring_covid19
+
+# Aim
+The aim is to create different datasets that all follow the same data structure. 
+
+#Naming convention for scipts
+Theme  + _ +  NameOfDataset (CamelCase)
+E.g.: Mobility_SlowTraffic
+
+#Data structure specification for output data
+
+**Encoding**<br>
+UTF-8 <br>
+
+**Tab separator**<br>
+"," <br>
+
+**Variables**<br>
+
+- **date**: POSIXct Format. Even though the granulation of the original signal data may be finer, the data for the resulting master table should be stored in POSIXct format on a daily basis. The function POSIXct() usually generates this from other input formats. E.g:<br>
+> as.POSIXct(paste("25.2.2020", "00:00:00", sep=" "), format="%d.%m.%y")  
+> as.POSIXct(paste("datumsvariable", "00:00:00", sep=" "), format="%d.%m.%y")	 
+
+- **value** <br>
+... - Value without thousand separator or the like  <br>
+... - Decimal separator is the dot "."<br>
+
+- **topic**: The five defined subject areas a speaking short name of the variable (lower case) <br>
+... ... - economy <br>
+... ... - social <br>
+... ... - mobility <br>
+... ... - health <br>
+... ... - education <br>
+... ... - other <br>
+
+- **variable**: meaningful short name of the variable (lower case) <br>
+
+- **location**: Geographic reference <br>
+
+- **unit**: unit of measurement <br>
+
+- **origin**: Short reference, such as could be used in the footer of a graphic <br>
+
+- **update**: In what time interval can the indicator be updated? baselines are values that serve as a comparative figure and do not change (e.g. from STATENT) <br>
+
+- **public**: Can the variable OGD be set? <br>	
+
+- **description**: if necessary, further, more detailed information  <br>
+
+#Data structure for scripts
+
+I recommend to structure the script as follows: <br>
+- Download data <br>
+- Format data according to data structure specification <br>
+- export result <br>
+
+
