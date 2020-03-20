@@ -1,7 +1,7 @@
 # Mobility_GooglePopularTimeGraph.md
 
 # Download
-files can be loaded directly from the bucket: <br>
+Files can be loaded directly from the bucket: <br>
 - all data: https://storage.googleapis.com/kantonzh-covid-hkfsaqgshw/gmaps_scrape/all.csv  <br>
 - only hours with “current”: https://storage.googleapis.com/kantonzh-covid-hkfsaqgshw/gmaps_scrape/all_valid.csv  <br>
 the data in the buckets is refreshed every 30 minutes or so, so you can just keep hitting this URL
