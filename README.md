@@ -1,13 +1,14 @@
-#monitoring_covid19
+
+ #monitoring_covid19
 
 # Aim
 The aim is to create different datasets that all follow the same data structure. 
 
-#Naming convention for scipts
+# Naming convention for scipts
 Theme  + _ +  NameOfDataset (CamelCase)
 E.g.: Mobility_SlowTraffic
 
-#Data structure specification for output data
+# Data structure specification for output data
 
 **Encoding**<br>
 UTF-8 <br>
@@ -26,12 +27,12 @@ UTF-8 <br>
 ... - Decimal separator is the dot "."<br>
 
 - **topic**: The five defined subject areas a speaking short name of the variable (lower case) <br>
-... ... - economy <br>
-... ... - social <br>
-... ... - mobility <br>
-... ... - health <br>
-... ... - education <br>
-... ... - other <br>
+... - economy <br>
+... - social <br>
+... - mobility <br>
+... - health <br>
+... - education <br>
+... - other <br>
 
 - **variable**: meaningful short name of the variable (lower case) <br>
 
@@ -47,7 +48,11 @@ UTF-8 <br>
 
 - **description**: if necessary, further, more detailed information  <br>
 
-#Data structure for scripts
+# Metadata
+
+See: https://docs.google.com/spreadsheets/d/1AXn18Cz-DJATHCsc_zfyHReWdK0FGjbcbLxxIgjGulg/edit#gid=2058194538
+
+# Data structure for scripts
 
 I recommend to structure the script as follows: <br>
 - Download data <br>
