@@ -39,6 +39,8 @@ https://medium.com/@bossley.samuel/part-1-how-to-mimic-google-maps-popular-times
 # Visualization 
 https://observablehq.com/@mmznrstat/people-density
 
+# Challenge 
+Is it possible to make these data comparable over time, to get some idea of the development of foot traffic at these locations over the next few weeks. Solutions would be very welcome!
 
 
 
