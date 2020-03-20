@@ -10,7 +10,7 @@ library(chron)
 library(reshape)
 
 ################################
-
+# Preliminary Code subject to review, Results to be viewed with caution!! 
 # Download data
 urlfile="https://data.stadt-zuerich.ch/dataset/83ca481f-275c-417b-9598-3902c481e400/resource/b9308f85-9066-4f5b-8eab-344c790a6982/download/2020_verkehrszaehlungen_werte_fussgaenger_velo.csv"
 zhlv<-data.frame(read_csv(url(urlfile)))

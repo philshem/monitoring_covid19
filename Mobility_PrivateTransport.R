@@ -10,7 +10,7 @@ library(chron)
 library(reshape)
 
 ################################
-
+# Preliminary Code, subject to review, Results to be viewed with caution!! 
 # Download data
 urlfile="https://data.stadt-zuerich.ch/dataset/6212fd20-e816-4828-a67f-90f057f25ddb/resource/44607195-a2ad-4f9b-b6f1-d26c003d85a2/download/sid_dav_verkehrszaehlung_miv_od2031_2020.csv"
 zhmiv<-data.frame(read_csv(url(urlfile)))

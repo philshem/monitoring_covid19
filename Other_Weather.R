@@ -10,7 +10,7 @@ library(chron)
 library(reshape)
 
 ################################
-
+# Preliminary Code subject to review, Results to be viewed with caution!! 
 # Download data
 climvars<-read.table("climate_vars.csv", sep=",", fileEncoding = "UTF-8", header=T)
 urlfile="https://data.geo.admin.ch/ch.meteoschweiz.klima/nbcn-tageswerte/VQEA34.csv"
