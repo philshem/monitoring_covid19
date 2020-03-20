@@ -59,11 +59,13 @@ UTF-8 <br>
 
 See: https://docs.google.com/spreadsheets/d/1AXn18Cz-DJATHCsc_zfyHReWdK0FGjbcbLxxIgjGulg/edit#gid=2058194538
 
-# Script Scturcture
+# Reccomended Script Structure
 
 I recommend to structure the script as follows: <br>
 - Download data <br>
 - Format data according to data structure specification <br>
 - export result <br>
 
+# Some More Information about the project (in german)
 
+See https://kantonzh.slack.com/files/U0100GHAA76/F010DREQXSL/kurzbeschrieb_covid-monitoring.pdf?origin_team=TAXFYF39S&origin_channel=GV4S2M9MH
