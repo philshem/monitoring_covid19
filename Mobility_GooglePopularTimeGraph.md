@@ -21,6 +21,7 @@ https://support.google.com/business/answer/6263531?hl=en <br>
 Questions reagrding this methodology: <br>
 - how is the "typical  peak popularity for the business for the week" calculated? I red, that they used an average of several weeks (same as for “visit duration” and “wait time estimates”; see metadata link for more details).  <br>
 - "relative to": I guess the data is indexed. But the methodology is not described in more detail here. I strongly assume that a pink bar whose height is 2x than the blue bar is 2x more visited. But I am not 100% certain. 
+- how does Google count people in a park? radius around a certain point?
 
 ## Economist
 https://www.economist.com/graphic-detail/2020/03/14/foot-traffic-has-fallen-sharply-in-cities-with-big-coronavirus-outbreaks <br>
@@ -31,4 +32,8 @@ https://support.google.com/business/answer/6263531?hl=en <br>
 https://www.linkedin.com/pulse/how-accurate-googles-popular-time-function-m%C3%A9lissa-sanchot/ <br>
 https://www.quora.com/How-does-the-Google-Maps-Popular-Times-feature-work <br>
 https://medium.com/@bossley.samuel/part-1-how-to-mimic-google-maps-popular-times-to-track-live-and-averaged-visit-data-using-amazon-2fc3cb589358
+
+# Visualization 
+https://observablehq.com/@mmznrstat/people-density
+
 

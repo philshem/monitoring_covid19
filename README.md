@@ -5,7 +5,7 @@
 - [Aim](https://github.com/statistikZH/monitoring_covid19/tree/master#aim)
 - [Naming convention for scipts](https://github.com/statistikZH/monitoring_covid19/tree/master#naming-convention-for-scipts)
 - [Data structure specification for output data](https://github.com/statistikZH/monitoring_covid19/tree/master#data-structure-specification-for-output-data)
-- [Metadata](https://github.com/statistikZH/monitoring_covid19/tree/master#metadata)
+- [Whats already done](https://github.com/statistikZH/monitoring_covid19/tree/master#whats-already-done)
 - [Script Structure](https://github.com/statistikZH/monitoring_covid19/tree/master#script-structure)
 - [More Information about the project (in german)](https://github.com/statistikZH/monitoring_covid19/tree/master#More-Information-about-the-project-(in-german))
 
@@ -56,7 +56,7 @@ UTF-8 <br>
 
 - **description**: if necessary, further, more detailed information  <br>
 
-# Whats already done:
+# Whats already done
 
 See: https://docs.google.com/spreadsheets/d/1AXn18Cz-DJATHCsc_zfyHReWdK0FGjbcbLxxIgjGulg/edit#gid=2058194538
 
