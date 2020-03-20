@@ -1,0 +1,102 @@
+---
+title: "flugbewegungen"
+author: "Basil Schläpfer"
+date: "17 März 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(stringsAsFactors = F)
+```
+
+```{r vorbereitung}
+# Vorbereitungen ----
+# *************************************
+
+rm(list=ls())
+
+# Aendern der Sprache in R
+Sys.setenv(LANG = "de")
+
+
+### Packages 
+library(rvest)
+library(dplyr)
+```
+
+
+```{r Aktuelle Daten laden}
+url  <- 'https://www.flughafen-zuerich.ch/unternehmen/laerm-politik-und-umwelt/flugbewegungen/bewegungsstatistik'
+
+flights <- url %>%
+  xml2::read_html()%>%
+  html_table(fill=T)
+
+departures_new <- flights[[1]] %>%
+  select(c(1,ncol(flights[[1]]))) %>%
+  slice(2:n())%>%
+  as_tibble()%>%
+  rename(date=PisteRoute,value=`Total:`)%>%
+  mutate(date = as.POSIXct(date, format = '%d.%m.%Y'))
+
+
+arrivals_new <- flights[[2]] %>%
+  select(c(1,ncol(flights[[2]]))) %>%
+  slice(2:n())%>%
+  as_tibble()%>%
+  rename(date=PisteZeit,value=`Total:`)%>%
+  mutate(date = as.POSIXct(date, format = '%d.%m.%Y'))
+
+
+```
+
+```{r Fortführung der bestehenden Tabellen}
+departures_old <- read.csv('old/departures.csv')%>%
+  mutate(date = as.POSIXct(date, format = '%Y-%m-%d'))
+
+departures <- departures_new %>%
+  filter(!date %in% departures_old$date) %>%
+  bind_rows(departures_old) %>%
+  arrange(date)%>%
+  mutate(topic = 'wirtschaft',
+         variable = 'tot_depart',
+         unit = 'flights',
+         description = 'number of departures from Zurich Airport',
+         location = 'Kanton Zürich',
+         origin = 'Flughafen Zürich',
+         update = 'daily',
+         public = 'ja') %>%
+  select(date,value,topic,variable,location, unit, origin, update, public, description)
+
+
+arrivals_old  <- read.csv('old/arrivals.csv')%>%
+  mutate(date = as.POSIXct(date, format = '%Y-%m-%d'))
+
+
+arrivals <- arrivals_new %>%
+  filter(!date %in% arrivals_old$date) %>%
+  bind_rows(arrivals_old) %>%
+  arrange(date) %>%
+  mutate(topic = 'wirtschaft',
+         variable = 'tot_arr',
+         unit = 'flights',
+         description = 'number of arrivals at Zurich Airport',
+         location = 'Kanton Zürich',
+         origin = 'Flughafen Zürich',
+         update = 'daily',
+         public = 'ja') %>%
+  select(date,value,topic,variable,location, unit, origin, update, public, description)
+
+#Einen Datensatz generieren
+flights <- rbind(departures,arrivals)
+
+#Aktualisierte Daten müssen noch manuell auf Github gespielt werden
+write.csv(flights,'Economy_FlightTraffic.csv',row.names=F, fileEncoding = "UTF-8")
+write.csv(flights,'../Daten/basil/Economy_FlightTraffic.csv',row.names=F, fileEncoding = "UTF-8")
+
+#Alte Dateien überschreiben
+write.csv(arrivals,'old/arrivals.csv',row.names=F, fileEncoding = "UTF-8")
+write.csv(departures,'old/departures.csv', row.names=F, fileEncoding = "UTF-8")
+
+```
