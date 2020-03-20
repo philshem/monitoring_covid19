@@ -7,6 +7,7 @@
 - [Data structure specification for output data](https://github.com/statistikZH/monitoring_covid19/tree/master#data-structure-specification-for-output-data)
 - [Metadata](https://github.com/statistikZH/monitoring_covid19/tree/master#metadata)
 - [Script Structure](https://github.com/statistikZH/monitoring_covid19/tree/master#script-structure)
+- [More Information about the project (in german)](https://github.com/statistikZH/monitoring_covid19/tree/master#More-Information-about-the-project-(in-german))
 
 # Aim
 The aim is to create different datasets that all follow the same data structure. 
@@ -59,7 +60,7 @@ UTF-8 <br>
 
 See: https://docs.google.com/spreadsheets/d/1AXn18Cz-DJATHCsc_zfyHReWdK0FGjbcbLxxIgjGulg/edit#gid=2058194538
 
-# Reccomended Script Structure
+# Recommended Script Structure
 
 I recommend to structure the script as follows: <br>
 - Download data <br>
@@ -68,4 +69,4 @@ I recommend to structure the script as follows: <br>
 
 # More Information about the project (in german)
 
-See [Projektbeschrieb: Monitoring der gesellschaftlichen Reaktion auf die Covid-19-Pandemie] (http://www.peter-moser.ch/publikationen/Kurzbeschrieb%20Covid-19_Monitoring_zh.pdf)
+See http://www.peter-moser.ch/publikationen/Kurzbeschrieb%20Covid-19_Monitoring_zh.pdf
